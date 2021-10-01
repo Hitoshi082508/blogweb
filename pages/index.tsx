@@ -1,12 +1,12 @@
-// import { GetStaticProps } from 'next'
+import { GetStaticProps } from 'next'
 
-// export const getStaticProps: GetStaticProps = async () => {
-//   const data = await fetch('http://localhost/api/blogs')
-//     .then(response => response.json())
-//   return {
-//     props: { posts: data }
-//   };
-// }
+export const getStaticProps: GetStaticProps = async () => {
+  const data = await fetch('http://localhost/api/blogs')
+    .then(response => response.json())
+  return {
+    props: { posts: data }
+  };
+}
 
 const IndexPage = (posts) => {
   return (
