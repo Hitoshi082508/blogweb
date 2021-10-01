@@ -1,15 +1,17 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import { GetStaticProps } from 'next'
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
-)
+export const getStaticProps: GetStaticProps = async () => {
+  const data = await fetch('http://localhost/api/blogs')
+    .then(response => response.json())
+  return {
+    props: { posts: data }
+  };
+}
+
+const IndexPage = (posts) => {
+  return (
+    <h1>{posts.posts[0].text}</h1>
+  )
+}
 
 export default IndexPage
