@@ -40,7 +40,9 @@ export const FirstView = styled(FCFirstView)`
   h1 {
     width: 500px;
     font-size: 30px;
+    font-weight: bold;
     color: #FFF;
+    margin-bottom: 10%;
     ${({ theme }) => theme.media.sp`
       width: 240px;
       font-size: 20px;
