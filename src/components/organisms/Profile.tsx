@@ -39,11 +39,10 @@ export const Profile = styled(FCProfile)`
   h1 {
     font-size: 100px;
     color: #FFF;
-    margin: 0;
-    margin-bottom: -40px;
+    margin-bottom: -25px;
     ${({ theme }) => theme.media.sp`
       font-size: 50px;
-      margin-bottom: -20px;
+      margin-bottom: -15px;
     `}
   }
   &__container {
@@ -80,17 +79,17 @@ export const Profile = styled(FCProfile)`
   }
   &__name {
     font-size: 30px;
-    margin: 0;
   }
   &__english-name {
     font-size: 20px;
     color: #4795D7;
     font-weight: normal;
-    margin: 0;
+    margin-bottom: 10px;
   }
   &__skill {
     font-size: 15px;
     font-weight: bold;
+    margin-bottom: 10px;
   }
   &__skill-pc {
     font-size: 15px;
@@ -111,6 +110,7 @@ export const Profile = styled(FCProfile)`
     font-size: 15px;
     line-height: 26px;
     width: 530px;
+    margin-top: 35px;
     ${({ theme }) => theme.media.sp`
       font-size: 14px;
       line-height: 24px;
