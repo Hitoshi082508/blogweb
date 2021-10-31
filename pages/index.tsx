@@ -1,17 +1,18 @@
-import { GetStaticProps } from 'next'
+import React from 'react'
+import styled from 'styled-components'
 
-export const getStaticProps: GetStaticProps = async () => {
-  const data = await fetch('http://localhost/api/blogs')
-    .then(response => response.json())
-  return {
-    props: { posts: data }
-  };
+type Props = {
+  className?: string
 }
 
-const IndexPage = (posts) => {
+const IndexBase: React.FC<Props> = ({ className }) => {
   return (
-    <h1>{posts.posts[0].text}</h1>
+    <div className={className}>
+      トップページ
+    </div>
   )
 }
 
-export default IndexPage
+const Index = styled(IndexBase)`
+`
+export default Index
