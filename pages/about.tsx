@@ -1,17 +1,17 @@
-import { GetStaticProps } from 'next'
+// import { GetStaticProps } from 'next'
 
-export const getStaticProps: GetStaticProps = async () => {
-  const data = await fetch('http://localhost/api/blogs')
-    .then(response => response.json())
-  return {
-    props: { posts: data }
-  };
-}
+// export const getStaticProps: GetStaticProps = async () => {
+//   const data = await fetch('http://localhost/api/blogs')
+//     .then(response => response.json())
+//   return {
+//     props: { posts: data }
+//   };
+// }
 
 const IndexPage = (posts) => {
   return (
     <>
-      <h1>{posts.posts[0].text}</h1>
+      {/* <h1>{posts.posts[0].text}</h1>
       <form action="http://localhost/api/blogs/update" method="post">
         <label>タグ</label>
         <input type="text" name="tag"></input>
@@ -22,7 +22,8 @@ const IndexPage = (posts) => {
         <label>サムネイル</label>
         <input type="text" name="thumbnail"></input>
         <button type="submit">送信する</button>
-      </form>
+      </form> */}
+      <div>アバウトページ</div>
     </>
   )
 }
