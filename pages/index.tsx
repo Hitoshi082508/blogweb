@@ -29,4 +29,4 @@ const Index = styled(IndexBase)`
     left: 2%;
   }
 `
-export default Index
+export default Index;
