@@ -18,8 +18,17 @@ export const WorkImage = styled(FCWorkImage)`
   background-color: #FFF;
   display: flex;
   justify-content: center;
+  margin-bottom: 25px;
+  ${({ theme }) => theme.media.sp`
+    width: 245px;
+    height: 150px;
+    margin-bottom: 20px;
+  `}
   img {
     height: 300px;
     width: auto;
+    ${({ theme }) => theme.media.sp`
+      height: 150px;
+    `}
   }
 `

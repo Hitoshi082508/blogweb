@@ -10,4 +10,5 @@ return <div className={className}>{text}</div>
 export const CompanyName = styled(FCCompanyName)`
   font-size: 20px;
   font-weight: bold;
+  margin-bottom: 10px;
 `

@@ -27,14 +27,20 @@ export const Work = styled(FCWork)`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 100px;
+  ${({ theme }) => theme.media.sp`
+    margin-bottom: 55px;
+  `}
   &__container {
     width: 97%;
     background-color: #FFF;
     border-radius: 46px;
     display: flex;
     justify-content: center;
-    padding-top: 160px;
-    padding-bottom: 65px;
+    padding: 160px 0 65px 0;
+    ${({ theme }) => theme.media.sp`
+      padding: 75px 0 15px 0;
+    `}
   }
   &__box {
     width: 1235px;

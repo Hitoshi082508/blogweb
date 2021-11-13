@@ -16,4 +16,5 @@ export const Label = styled(FCLabel)`
   text-align: center;
   color: #FFF;
   background-color: #4594D7;
+  margin-bottom: 10px;
 `

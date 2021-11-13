@@ -36,6 +36,10 @@ export const Profile = styled(FCProfile)`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 110px;
+  ${({ theme }) => theme.media.sp`
+    margin-bottom: 50px;
+  `}
   h1 {
     font-size: 100px;
     color: #FFF;
