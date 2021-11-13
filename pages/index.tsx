@@ -53,6 +53,10 @@ const Index = styled(IndexBase)`
     top: 25px;
     left: 25px;
     z-index: 9999;
+    ${({ theme }) => theme.media.sp`
+      top: 10px;
+      left: 10px;
+    `}
   }
 `
 export default Index;
