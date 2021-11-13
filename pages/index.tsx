@@ -2,8 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { GetStaticProps } from 'next'
 //component
-import { FirstView } from '../src/components/organisms/FirstView'
-import { Profile } from '../src/components/organisms/Profile'
+import { FirstView } from 'src/components/organisms/FirstView'
+import { Profile } from 'src/components/organisms/Profile'
+import { WorkCard } from 'src/components/organisms/WorkCard'
+import { Work } from 'src/components/templates/Work'
 
 type Props = {
   className?: string
@@ -23,6 +25,7 @@ const IndexBase: React.FC<Props> = ({ className }) => {
       <img src="logo.png" className={`${className}__logo`} />
       <FirstView />
       <Profile />
+      <Work />
       {/* <form action="http://localhost/api/contact/create" method="post">
         <label>名前</label>
         <input type="text" name="name"></input>
