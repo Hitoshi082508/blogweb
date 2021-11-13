@@ -13,4 +13,8 @@ export const Title = styled(FCTitle)`
   font-weight: bold;
   color: #FFF;
   margin-bottom: -25px;
+  ${({ theme }) => theme.media.sp`
+    font-size: 50px;
+    margin-bottom: -15px;
+  `}
 `

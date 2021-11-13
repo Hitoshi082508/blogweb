@@ -4,8 +4,8 @@ import { GetStaticProps } from 'next'
 //component
 import { FirstView } from 'src/components/organisms/FirstView'
 import { Profile } from 'src/components/organisms/Profile'
-import { WorkCard } from 'src/components/organisms/WorkCard'
 import { Work } from 'src/components/templates/Work'
+import { Contact } from 'src/components/templates/Contact'
 
 type Props = {
   className?: string
@@ -26,6 +26,7 @@ const IndexBase: React.FC<Props> = ({ className }) => {
       <FirstView />
       <Profile />
       <Work />
+      <Contact />
       {/* <form action="http://localhost/api/contact/create" method="post">
         <label>名前</label>
         <input type="text" name="name"></input>
@@ -49,8 +50,9 @@ const Index = styled(IndexBase)`
     height: 68px;
     border-radius: 50%;
     position: fixed;
-    top: 2%;
-    left: 2%;
+    top: 25px;
+    left: 25px;
+    z-index: 9999;
   }
 `
 export default Index;
