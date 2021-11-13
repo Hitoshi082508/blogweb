@@ -31,6 +31,8 @@ export const AnswerButton = styled(FCAnswerButton)`
     ${({ theme }) => theme.media.sp`
       width: 230px;
       height: 40px;
+      font-size: 13px;
+      padding-left: 15px;
     `}
   }
   &__icon {
