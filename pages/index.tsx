@@ -6,6 +6,7 @@ import { FirstView } from 'src/components/organisms/FirstView'
 import { Profile } from 'src/components/organisms/Profile'
 import { Work } from 'src/components/templates/Work'
 import { Contact } from 'src/components/templates/Contact'
+import { Footer } from 'src/components/templates/Footer'
 
 type Props = {
   className?: string
@@ -27,6 +28,7 @@ const IndexBase: React.FC<Props> = ({ className }) => {
       <Profile />
       <Work />
       <Contact />
+      <Footer />
       {/* <form action="http://localhost/api/contact/create" method="post">
         <label>名前</label>
         <input type="text" name="name"></input>
