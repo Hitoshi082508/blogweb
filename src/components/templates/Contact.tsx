@@ -12,7 +12,6 @@ type Props = {
   className?: string
 }
 export const FCContact: React.FC<Props & Styling> = ({ className }) => {
-  console.log(isMobile)
   return (
     <div className={className}>
       <Title text="Contact" />
@@ -36,6 +35,10 @@ export const Contact = styled(FCContact)`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 110px;
+  ${({ theme }) => theme.media.sp`
+    margin-bottom: 50px;
+  `}
   &__container {
     width: 97%;
     background-color: #FFF;
