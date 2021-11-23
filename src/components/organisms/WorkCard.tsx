@@ -9,16 +9,22 @@ type Props = {
   labelText: string
   companyName: string
   skillText: string
+  image: string
+  key: number
+  onClick: () => void
 }
 export const FCWorkCard: React.FC<Props> = ({
   className,
   labelText,
   companyName,
-  skillText
+  skillText,
+  image,
+  key,
+  onClick
 }) => {
   return (
-    <div className={className}>
-      <WorkImage src="logo.png" />
+    <div className={className} key={key} onClick={onClick}>
+      <WorkImage src={image} />
       <Label text={labelText} />
       <CompanyName text={companyName} />
       <SkillText text={skillText} />

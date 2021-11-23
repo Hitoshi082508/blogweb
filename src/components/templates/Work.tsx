@@ -2,21 +2,30 @@ import React from 'react'
 import styled from 'styled-components'
 import { WorkCard } from 'src/components/organisms/WorkCard'
 import { Title } from 'src/components/atoms/Title'
+import { useRouter } from 'next/router';
 type Props = {
   className?: string
+  posts: any
 }
-export const FCWork: React.FC<Props> = ({ className }) => {
+export const FCWork: React.FC<Props> = ({ className, posts }) => {
+  const router = useRouter();
   return (
     <div className={className}>
       <Title text="Work" />
       <div className={`${className}__container`}>
         <div className={`${className}__box`}>
-          <WorkCard labelText="Webデザイン" companyName="株式会社Wakrak" skillText="React Native、PHP" />
-          <WorkCard labelText="Webデザイン" companyName="株式会社Wakrak" skillText="React Native、PHP" />
-          <WorkCard labelText="Webデザイン" companyName="株式会社Wakrak" skillText="React Native、PHP" />
-          <WorkCard labelText="Webデザイン" companyName="株式会社Wakrak" skillText="React Native、PHP" />
-          <WorkCard labelText="Webデザイン" companyName="株式会社Wakrak" skillText="React Native、PHP" />
-          <WorkCard labelText="Webデザイン" companyName="株式会社Wakrak" skillText="React Native、PHP" />
+          {posts.map((post: any, index: number) => {
+            return (
+              <WorkCard
+                labelText={post.fields.tag}
+                companyName={post.fields.title}
+                skillText={post.fields.skill}
+                image={`https:${post.fields.image.fields.file.url}`}
+                onClick={() => router.push(`/${post.sys.id}`)}
+                key={index}
+              />
+            )
+          })}
         </div>
       </div>
     </div>
