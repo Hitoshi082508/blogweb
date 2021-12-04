@@ -4,11 +4,12 @@ type Styling = {}
 type Props = {
   className?: string
   placeholder: string
+  onChange: (v: string) => void
 }
-export const FCAnswerTextInput: React.FC<Props & Styling> = ({ className, placeholder }) => {
+export const FCAnswerTextInput: React.FC<Props & Styling> = ({ className, placeholder, onChange }) => {
 return (
     <div className={className}>
-      <textarea placeholder={placeholder} />
+      <textarea placeholder={placeholder} onChange={(e) => e.target.value} />
     </div>
   )
 }

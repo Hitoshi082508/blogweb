@@ -5,11 +5,12 @@ type Props = {
   className?: string
   placeholder: string
   type: string
+  onChange: (v: string) => void
 }
-export const FCAnswerInput: React.FC<Props & Styling> = ({ className, placeholder, type }) => {
+export const FCAnswerInput: React.FC<Props & Styling> = ({ className, placeholder, type, onChange }) => {
   return (
     <div className={className}>
-      <input placeholder={placeholder} type={type} />
+      <input placeholder={placeholder} type={type} onChange={(e) => e.target.value} />
     </div>
   )
 }
