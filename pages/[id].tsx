@@ -19,7 +19,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const paths = response.items.map((item) => {
     return {
       params: {
-        id: item.sys.id,
+        id: item.sys.id.toString(),
       },
     };
   });
@@ -51,7 +51,7 @@ const FCDetailBase: React.FC<Props> = ({ className, posts }) => {
     <div className={className}>
       <CardText labelText={detailPosts[0].fields.tag} skillText={detailPosts[0].fields.skill} companyName={detailPosts[0].fields.title}/>
       <ReactMarkdown>{detailPosts[0].fields.text.content[0].content[0].value}</ReactMarkdown>
-      <ImageList imageFirst={`https:${detailPosts[0].fields.image.fields.file.url}`} imageSecond={`https:${detailPosts[0].fields.detailImageFirst.fields.file.url}`} imageThird={`https:${detailPosts[0].fields.detailImageSecond.fields.file.url}`} />
+      <ImageList imageFirst={`https:${detailPosts[0].fields.image.fields.file.url}`} imageSecond={`https:${detailPosts[0].fields.detailImageFirst?.fields.file.url}`} imageThird={`https:${detailPosts[0].fields.detailImageSecond?.fields.file.url}`} />
     </div>
   )
 };
