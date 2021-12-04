@@ -47,8 +47,6 @@ const FCDetailBase: React.FC<Props> = ({ className, posts }) => {
     })
     .filter((post) => post);
 
-  console.log(`https:${detailPosts[0].fields.detailImageSecond.fields.file.url}`);
-
   return (
     <div className={className}>
       <CardText labelText={detailPosts[0].fields.tag} skillText={detailPosts[0].fields.skill} companyName={detailPosts[0].fields.title}/>
