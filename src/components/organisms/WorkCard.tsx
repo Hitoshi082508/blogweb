@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Label } from 'src/components/atoms/Label';
-import { CompanyName } from 'src/components/atoms/CompanyName';
-import { SkillText } from 'src/components/atoms/SkillText';
 import { WorkImage } from '../atoms/WorkImage';
+import { CardText } from '../molecules/CardText';
 
 type Props = {
   className?: string
