@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 type Styling = {}
 type Props = {
   className?: string
@@ -11,8 +11,8 @@ export const FCAnswerInput: React.FC<Props & Styling> = ({ className, placeholde
     <div className={className}>
       <input placeholder={placeholder} type={type} />
     </div>
-  )
-}
+  );
+};
 export const AnswerInput = styled(FCAnswerInput)`
   margin: 0 90px 70px auto;
   ${({ theme }) => theme.media.sp`
@@ -37,4 +37,4 @@ export const AnswerInput = styled(FCAnswerInput)`
       font-size: 13px;
     `}
   }
-`
+`;

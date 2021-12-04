@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
-import { WorkCard } from 'src/components/organisms/WorkCard'
-import { Title } from 'src/components/atoms/Title'
+import React from 'react';
+import styled from 'styled-components';
+import { WorkCard } from 'src/components/organisms/WorkCard';
+import { Title } from 'src/components/atoms/Title';
 import { useRouter } from 'next/router';
 type Props = {
   className?: string
@@ -24,13 +24,13 @@ export const FCWork: React.FC<Props> = ({ className, posts }) => {
                 onClick={() => router.push(`/${post.sys.id}`)}
                 key={index}
               />
-            )
+            );
           })}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 export const Work = styled(FCWork)`
   width: 100%;
   display: flex;
@@ -58,4 +58,4 @@ export const Work = styled(FCWork)`
     flex-wrap: wrap;
     justify-content: space-around;
   }
-`
+`;

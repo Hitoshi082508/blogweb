@@ -1,12 +1,12 @@
-import React from 'react'
-import styled from 'styled-components'
-import { AnswerButton } from '../atoms/AnswerButton'
+import React from 'react';
+import styled from 'styled-components';
+import { AnswerButton } from '../atoms/AnswerButton';
 // component
-import { AnswerInput } from '../atoms/AnswerInput'
-import { AnswerTextInput } from '../atoms/AnswerTextArea'
-import { Question } from '../atoms/Question'
-import { Title } from '../atoms/Title'
-import { isMobile } from "react-device-detect"
+import { AnswerInput } from '../atoms/AnswerInput';
+import { AnswerTextInput } from '../atoms/AnswerTextArea';
+import { Question } from '../atoms/Question';
+import { Title } from '../atoms/Title';
+import { isMobile } from "react-device-detect";
 type Styling = {}
 type Props = {
   className?: string
@@ -28,8 +28,8 @@ export const FCContact: React.FC<Props & Styling> = ({ className }) => {
         <AnswerButton text="メッセージを送信する"/>
       </form>
     </div>
-  )
-}
+  );
+};
 export const Contact = styled(FCContact)`
   width: 100%;
   display: flex;
@@ -52,4 +52,4 @@ export const Contact = styled(FCContact)`
       padding-bottom: 75px;
     `}
   }
-`
+`;

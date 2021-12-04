@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 import { AiOutlineRight } from "react-icons/ai";
 type Styling = {}
 type Props = {
@@ -12,8 +12,8 @@ return (
       <button>{text}</button>
       <AiOutlineRight className={`${className}__icon`} />
     </div>
-  )
-}
+  );
+};
 export const AnswerButton = styled(FCAnswerButton)`
   margin: 0 90px 70px auto;
   ${({ theme }) => theme.media.sp`
@@ -45,4 +45,4 @@ export const AnswerButton = styled(FCAnswerButton)`
       right: 12px;
     `}
   }
-`
+`;

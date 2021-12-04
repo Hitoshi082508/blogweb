@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 type Styling = {}
 type Props = {
   className?: string
@@ -26,8 +26,8 @@ return (
         <div className={`${className}__scroll-circle`}></div>
       </div>
     </div>
-  )
-}
+  );
+};
 export const FirstView = styled(FCFirstView)`
   min-height: 100vh;
   width: 100%;
@@ -90,4 +90,4 @@ export const FirstView = styled(FCFirstView)`
     font-weight: bold;
     padding: 0 5px;
   }
-`
+`;

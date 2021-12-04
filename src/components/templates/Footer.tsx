@@ -1,6 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Title } from '../atoms/Title'
+import React from 'react';
+import styled from 'styled-components';
+import { Title } from '../atoms/Title';
 type Styling = {}
 type Props = {
   className?: string
@@ -13,8 +13,8 @@ export const FCFooter: React.FC<Props & Styling> = ({ className }) => {
         Continue when we meet…
       </div>
     </div>
-  )
-}
+  );
+};
 export const Footer = styled(FCFooter)`
   width: 100%;
   display: flex;
@@ -34,4 +34,4 @@ export const Footer = styled(FCFooter)`
       height: 100px;
     `}
   }
-`
+`;

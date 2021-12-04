@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 type Styling = {}
 type Props = {
   className?: string
@@ -30,8 +30,8 @@ return (
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 export const Profile = styled(FCProfile)`
   min-height: 100vh;
   width: 100%;
@@ -123,4 +123,4 @@ export const Profile = styled(FCProfile)`
       width: 245px;
     `}
   }
-`
+`;
