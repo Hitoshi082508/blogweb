@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 type Styling = {}
 type Props = {
   className?: string
@@ -8,10 +8,10 @@ type Props = {
 export const FCWorkImage: React.FC<Props & Styling> = ({ className, src }) => {
   return (
     <div className={className}>
-      <img src={src} />
+      <img src={src} alt="" />
     </div>
-  )
-}
+  );
+};
 export const WorkImage = styled(FCWorkImage)`
   width: 480px;
   height: 300px;
@@ -31,4 +31,4 @@ export const WorkImage = styled(FCWorkImage)`
       height: 150px;
     `}
   }
-`
+`;

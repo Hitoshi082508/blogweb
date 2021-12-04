@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 type Props = {
   className?: string
   text: string
@@ -9,8 +9,8 @@ export const FCQuestion: React.FC<Props> = ({ className, text }) => {
     <div className={className}>
       <div className={`${className}__text`}>{text}</div>
     </div>
-  )
-}
+  );
+};
 export const Question = styled(FCQuestion)`
   margin: 0 0 30px 90px;
   ${({ theme }) => theme.media.sp`
@@ -47,4 +47,4 @@ export const Question = styled(FCQuestion)`
       padding-left: 15px;
     `}
   }
-`
+`;

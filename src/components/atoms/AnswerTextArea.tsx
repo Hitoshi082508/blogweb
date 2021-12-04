@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 type Styling = {}
 type Props = {
   className?: string
@@ -10,8 +10,8 @@ return (
     <div className={className}>
       <textarea placeholder={placeholder} />
     </div>
-  )
-}
+  );
+};
 export const AnswerTextInput = styled(FCAnswerTextInput)`
   margin: 0 90px 70px auto;
   ${({ theme }) => theme.media.sp`
@@ -37,4 +37,4 @@ export const AnswerTextInput = styled(FCAnswerTextInput)`
       font-size: 13px;
     `}
   }
-`
+`;
