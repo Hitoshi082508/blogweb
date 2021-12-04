@@ -10,5 +10,5 @@ return <div className={className}>{`使用スキル / ${text}`}</div>
 export const SkillText = styled(FCSkillText)`
   font-size: 15px;
   color: #4594D7;
-  margin-bottom: 65px;
+  padding-bottom: 65px;
 `
