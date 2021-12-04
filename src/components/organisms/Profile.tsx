@@ -10,7 +10,7 @@ return (
       <h1>Profile</h1>
       <div className={`${className}__container`}>
         <div className={`${className}__box`}>
-          <img src="logo.png" />
+          <img src="hitoshi.jpg" />
           <div className={`${className}__text-container`}>
             <h4 className={`${className}__name`}>中澤 仁志</h4>
             <p className={`${className}__english-name`}>Hitoshi Nakazawa</p>
@@ -22,7 +22,9 @@ return (
               WordPress/Firebase...
             </p>
             <p className={`${className}__introduction`}>
-              ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+              家業の影響で１年間洋菓子の専門学校に通い、その後大学に進学。進学と同時に、長期インターンを開始。様々なスタートアップのマーケティング部分を担当。
+              その後、支援先のCTOにプログラミングの大切さ、面白さを教わり、プログラミングの学習を開始。プログラミング教室を卒業後、スタートアップでエンジニアとして働き、今に至る。
+              株式会社unname→株式会社Funova→株式会社Prokids→株式会社KAEN
             </p>
           </div>
         </div>

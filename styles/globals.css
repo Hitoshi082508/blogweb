@@ -7,4 +7,7 @@ body {
     "Hiragino Sans",
     Meiryo,
     sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background: transparent linear-gradient(180deg, #4594D7 0%, #94D0E9 100%) 0% 0% no-repeat padding-box;
 }

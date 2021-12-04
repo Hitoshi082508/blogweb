@@ -4,6 +4,7 @@ import { Label } from 'src/components/atoms/Label';
 import { CompanyName } from 'src/components/atoms/CompanyName';
 import { SkillText } from 'src/components/atoms/SkillText';
 import { WorkImage } from '../atoms/WorkImage';
+
 type Props = {
   className?: string
   labelText: string
@@ -25,9 +26,7 @@ export const FCWorkCard: React.FC<Props> = ({
   return (
     <div className={className} key={key} onClick={onClick}>
       <WorkImage src={image} />
-      <Label text={labelText} />
-      <CompanyName text={companyName} />
-      <SkillText text={skillText} />
+      <CardText labelText={labelText} companyName={companyName} skillText={skillText}/>
     </div>
   );
 };
