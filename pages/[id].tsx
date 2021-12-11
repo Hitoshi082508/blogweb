@@ -49,9 +49,17 @@ const FCDetailBase: React.FC<Props> = ({ className, posts }) => {
 
   return (
     <div className={className}>
-      <CardText labelText={detailPosts[0].fields.tag} skillText={detailPosts[0].fields.skill} companyName={detailPosts[0].fields.title}/>
-      <ReactMarkdown>{detailPosts[0].fields.text.content[0].content[0].value}</ReactMarkdown>
-      <ImageList imageFirst={`https:${detailPosts[0].fields.image.fields.file.url}`} imageSecond={`https:${detailPosts[0].fields.detailImageFirst?.fields.file.url}`} imageThird={`https:${detailPosts[0].fields.detailImageSecond?.fields.file.url}`} />
+      <CardText
+        labelText={detailPosts[0].fields.tag}
+        skillText={detailPosts[0].fields.skill}
+        companyName={detailPosts[0].fields.title}
+      />
+      <ReactMarkdown className={`${className}__text`}>{detailPosts[0].fields.text.content[0].content[0].value}</ReactMarkdown>
+      <ImageList
+        imageFirst={`https:${detailPosts[0].fields.image.fields.file.url}`}
+        imageSecond={`https:${detailPosts[0].fields.detailImageFirst?.fields.file.url}`}
+        imageThird={`https:${detailPosts[0].fields.detailImageSecond?.fields.file.url}`}
+      />
     </div>
   )
 };
@@ -61,6 +69,9 @@ export const DetailBase = styled(FCDetailBase)`
   padding: 75px 90px 130px 90px;
   background-color: #FFF;
   border-radius: 0 0 46px 46px;
+  &__text {
+    margin-bottom: 75px;
+  }
 `
 
 export default DetailBase;
