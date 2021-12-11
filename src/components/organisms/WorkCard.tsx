@@ -29,4 +29,5 @@ export const FCWorkCard: React.FC<Props> = ({
   );
 };
 export const WorkCard = styled(FCWorkCard)`
+  cursor: pointer;
 `;
